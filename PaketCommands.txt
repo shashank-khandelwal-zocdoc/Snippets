@@ -1,0 +1,2 @@
+paket restore -f
+paket update <package>

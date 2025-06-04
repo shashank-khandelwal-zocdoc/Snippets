@@ -1,0 +1,9 @@
+plinth validate --spec <spec>
+
+aws sso login --sso-session zd-cli
+
+export AWS_PROFILE=ci
+
+aws ecr get-login-password --region us-east-1 --profile ci | docker login --username AWS --password-stdin 038405485655.dkr.ecr.us-east-1.amazonaws.com
+
+aws ecr describe-images --repository-name monolith-api-fakes  --image-ids imageTag=synchronizer-updates-fake-latest

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <add key="Artifactory" value="https://artifactory.zocdoc-ci.com/artifactory/api/nuget/nuget" />
+    </packageSources>
+    <packageSourceCredentials>
+        <Artifactory>
+            <add key="Username" value="shashank.khandelwal" />
+            <add key="ClearTextPassword" value="YOUR_ARTIFACTORY_PASSWORD_HERE" />
+        </Artifactory>
+    </packageSourceCredentials>
+    <apikeys>
+        <add key="https://artifactory.zocdoc-ci.com/artifactory/api/nuget/nuget" value="YOUR_ARTIFACTORY_API_KEY_HERE" />
+    </apikeys>
+</configuration>

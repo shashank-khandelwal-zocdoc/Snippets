@@ -1,0 +1,13 @@
+npmRegistries:
+  //artifactory.zocdoc-ci.com/artifactory/api/npm/npm/:
+    npmAlwaysAuth: true
+    npmAuthToken: "YOUR_NPM_AUTH_TOKEN_HERE"
+
+npmRegistryServer: "https://artifactory.zocdoc-ci.com/artifactory/api/npm/npm/"
+
+npmScopes:
+  "@zocdoc":
+    npmAlwaysAuth: true
+    npmRegistryServer: "https://artifactory.zocdoc-ci.com/artifactory/api/npm/npm/"
+
+afterInstall: yarn build:ts
